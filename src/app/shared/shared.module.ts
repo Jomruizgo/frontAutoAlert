@@ -22,6 +22,7 @@ import {MatIconModule} from '@angular/material/icon';
   ],
   exports:[
     PageNotFoundComponent,
+    NavbarComponent,
   ]
 })
 export class SharedModule { }
