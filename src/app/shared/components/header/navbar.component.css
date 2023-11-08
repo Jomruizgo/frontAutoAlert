@@ -1,0 +1,24 @@
+.spacer{
+
+    flex: 1 1 auto;
+}
+
+.toolbar {
+
+    background-color: #4a4848;
+
+}
+
+/* styles.css o tu archivo CSS específico */
+.bold-text {
+    font-weight: bold; /* Pone en negrita el texto */
+  }
+  
+  .icon-text-container {
+    display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+  }
+  
+  mat-icon {
+    margin-right: 10px; /* Ajusta el espacio entre el ícono y el texto según lo necesites */
+  }

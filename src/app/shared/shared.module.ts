@@ -1,22 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
-import { HeaderComponent } from './components/header/header.component';
+import { NavbarComponent } from './components/header/navbar.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
-
+import {MatButtonModule} from '@angular/material/button';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
   declarations: [
-    HeaderComponent,
+    NavbarComponent,
     FooterComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   exports:[
-    PageNotFoundComponent
+    PageNotFoundComponent,
   ]
 })
 export class SharedModule { }
