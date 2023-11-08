@@ -7,7 +7,7 @@ import { ReferenceComponent } from './pages/reference/reference.component';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeComponent
   },
   {
