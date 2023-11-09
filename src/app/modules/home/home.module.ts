@@ -7,6 +7,7 @@ import { SupplierComponent } from './pages/supplier/supplier.component';
 import { AlertComponent } from './pages/alert/alert.component';
 import { ReferenceComponent } from './pages/reference/reference.component';
 import { SharedModule } from "../../shared/shared.module";
+import { CreateAlertComponent } from './pages/alert/create-alert/create-alert.component';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { SharedModule } from "../../shared/shared.module";
         HomeComponent,
         SupplierComponent,
         AlertComponent,
-        ReferenceComponent
+        ReferenceComponent,
+        CreateAlertComponent
     ],
     imports: [
         CommonModule,

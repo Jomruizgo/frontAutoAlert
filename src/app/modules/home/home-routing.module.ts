@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { SupplierComponent } from './pages/supplier/supplier.component';
 import { AlertComponent } from './pages/alert/alert.component';
 import { ReferenceComponent } from './pages/reference/reference.component';
+import { CreateAlertComponent } from './pages/alert/create-alert/create-alert.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'alert',
     component: AlertComponent
+  },
+  {
+    path: 'create-alert',
+    component: CreateAlertComponent
   },
   {
     path: 'reference',
