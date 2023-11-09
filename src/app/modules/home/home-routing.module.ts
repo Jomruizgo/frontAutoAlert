@@ -7,7 +7,7 @@ import { EvidenceComponent } from './pages/evidence/evidence.component';
 import { ReferenceComponent } from './pages/reference/reference.component';
 import { CreateAlertComponent } from './pages/alert/create-alert/create-alert.component';
 import { CreateEvidenceComponent } from './pages/evidence/create-evidence/create-evidence.component';
-import { ListEvidenceComponent } from './pages/evidence/list-evidence/list-evidence.component';
+import { DetailEvidenceComponent } from './pages/evidence/detail-evidence/detail-evidence.component';
 
 
 
@@ -37,8 +37,8 @@ const routes: Routes = [
     component: CreateEvidenceComponent
   },
   {
-    path: 'list-evidence',
-    component: ListEvidenceComponent
+    path: 'detail-evidence',
+    component: DetailEvidenceComponent
   },
   {
     path: 'reference',

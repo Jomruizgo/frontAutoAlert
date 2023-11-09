@@ -10,7 +10,7 @@ import { SharedModule } from "../../shared/shared.module";
 import { CreateAlertComponent } from './pages/alert/create-alert/create-alert.component';
 import { EvidenceComponent } from './pages/evidence/evidence.component';
 import { CreateEvidenceComponent } from './pages/evidence/create-evidence/create-evidence.component';
-import { ListEvidenceComponent } from './pages/evidence/list-evidence/list-evidence.component';
+import { DetailEvidenceComponent } from './pages/evidence/detail-evidence/detail-evidence.component';
 
 
 @NgModule({
@@ -22,7 +22,7 @@ import { ListEvidenceComponent } from './pages/evidence/list-evidence/list-evide
         ReferenceComponent,
         CreateAlertComponent,
         CreateEvidenceComponent,
-        ListEvidenceComponent
+        DetailEvidenceComponent
     ],
     imports: [
         CommonModule,
