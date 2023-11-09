@@ -5,6 +5,7 @@ import { SupplierComponent } from './pages/supplier/supplier.component';
 import { AlertComponent } from './pages/alert/alert.component';
 import { ReferenceComponent } from './pages/reference/reference.component';
 import { CreateAlertComponent } from './pages/alert/create-alert/create-alert.component';
+import { RegisterPartComponent } from './pages/alert/register-part/register-part.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'reference',
     component: ReferenceComponent
+  },
+  {
+    path: 'register-part',
+    component: RegisterPartComponent
   }
 
 ];
