@@ -14,4 +14,12 @@ export class AlertComponent {
   redirectToCreateAlert() {
     this.router.navigate(['/home/create-alert']);
   }
+
+  redirectToAlertOverview() {
+    this.router.navigate(['/home/alert-overview']);
+  }
+
+  redirectToValidatedCreateAlert() {
+    this.router.navigate(['/home/create-validated-alert']);
+  }
 }

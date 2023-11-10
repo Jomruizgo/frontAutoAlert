@@ -1,0 +1,29 @@
+
+.nav-pills .nav-link.active {
+    background-color: #db3f34; 
+    color: #ffffff; 
+}
+
+.nav-pills .nav-link {
+
+    color: #F44336; 
+}
+
+.form-label{
+
+    font-family: 'Roboto', sans-serif;
+    color: #4a4848;
+    font-weight: 350;
+}
+
+hr {
+
+    border-top: 3px solid #4a4848
+}
+
+.th-text{
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #4a4848;
+}

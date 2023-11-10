@@ -1,0 +1,80 @@
+<app-navbar></app-navbar>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="d-flex justify-content-center align-items-center mt-4">
+        <div class="card-body mt-5" style="max-width: 60rem; margin-left: 2rem;">
+            <h2 class="card-title">Registrar Nueva Alerta</h2>
+            <div id="section2" name="section2" class="row">
+                <!-- Columna 1 -->
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre">
+                    </div>
+                    <div class="mb-3">
+                        <label for="fechaReclamacion" class="form-label">Fecha de reclamación</label>
+                        <div class="input-group">
+                            <input type="date" class="form-control" id="fechaReclamacion" name="fechaReclamacion">
+                            <span class="input-group-text">
+                                <i class="zmdi zmdi-calendar-note"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="kilometraje" class="form-label">Kilometraje del vehículo</label>
+                        <input type="text" class="form-control" id="kilometraje" name="kilometraje">
+                    </div>
+                    <div class="mb-3">
+                        <label for="costo" class="form-label">Costo</label>
+                        <input type="text" class="form-control" id="costo" name="costo">
+                    </div>
+                    <div class="mb-3">
+                        <label for="tipoAlerta" class="form-label">Tipo de Alerta</label>
+                        <select class="form-select" id="tipoAlerta" name="tipoAlerta">
+                            <option class="form-label" disabled selected>Elige una opción</option>
+                            <option>Subject 1</option>
+                            <option>Subject 2</option>
+                            <option>Subject 3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Columna 2 -->
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="efectoCliente" class="form-label">Descripción Efecto Cliente</label>
+                        <textarea class="form-control" id="efectoCliente" name="efectoCliente" rows="5"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="modoFallo" class="form-label">Descripción del modo de fallo</label>
+                        <textarea class="form-control" id="modoFallo" name="modoFallo" rows="5"></textarea>
+                    </div>
+                </div>
+            </div>
+
+                    <div class="mt-4 text-right">
+                        <a href="home/create-alert" type="submit" class="btn btn-danger mx-auto">Regresar</a>
+                        <a>&nbsp;</a>
+                        <a href="home/register-part" type="submit" class="btn btn-danger mx-auto">Siguiente</a>
+                    </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

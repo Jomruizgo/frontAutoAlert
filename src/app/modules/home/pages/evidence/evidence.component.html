@@ -1,0 +1,73 @@
+<app-navbar></app-navbar>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <title>Tabla de Evidencias</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="input-group w-50">
+            <input type="text" class="form-control" placeholder="Buscar" />
+            <div class="input-group-append">
+              <span class="input-group-text"
+                ><i class="fas fa-search"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 text-right">
+          <button (click)="redirectToCreateEvidence()" class="btn btn-danger">
+            <i class="fas fa-plus"></i> Agregar una nueva Evidencia
+          </button>
+        </div>
+      </div>
+      <table class="table mt-5">
+        <thead>
+          <tr>
+            <th class="th-text">ID</th>
+            <th class="th-text">Archivo</th>
+            <th class="th-text">Fecha de Creación</th>
+            <th class="th-text">Estado</th>
+            <th class="th-text">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="th-text">1</td>
+            <td class="th-text">Evidencia.png</td>
+            <td class="th-text">01/01/2023</td>
+            <td class="th-text">Activo</td>
+            <td class="th-text">
+              <button class="btn btn-outline-secondary mr-2">
+                <i class="fas fa-eye" (click)="redirectToDetailEvidence()"></i>
+              </button>
+              <!-- Why is (click) not working-->
+              <button class="btn btn-outline-secondary mr-2">
+                <i class="fas fa-edit"></i>
+              </button>
+              <button class="btn btn-outline-danger">
+                <i class="fas fa-trash-alt"></i>
+              </button>
+            </td>
+          </tr>
+          <!-- Fin de las filas de ejemplo -->
+        </tbody>
+      </table>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
