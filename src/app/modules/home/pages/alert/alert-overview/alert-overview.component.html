@@ -1,0 +1,98 @@
+<app-navbar></app-navbar>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Pestañas -->
+        <div class="col-md-3 mt-4">
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" id="infoTab" data-toggle="pill" href="home/alert-overview">Información General</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="seguimientoTab" data-toggle="pill" href="home/alert-tracking">Seguimiento</a>
+                </li>
+            </ul>
+        </div>
+        
+        <!-- Contenedor de contenido -->
+        <div class="col-md-9 mt-4">
+            <div class="tab-content">
+                <!-- Pestaña 1 - Información General -->
+                <div class="col-sm-12 mb-4">
+                    <input type="text" id="nombre" class="form-control" disabled value="Nombre de la Alerta">
+                </div>
+                <div class="tab-pane fade show active" id="infoContent" style="border: 2px solid #ccc; padding: 15px; border-radius: 10px;">
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <input type="text" id="tipo" class="form-control" disabled value="Tipo">
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" id="vin" class="form-control" disabled value="VIN">
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" id="fechaCreacion" class="form-control" disabled value="01/01/2023">
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" id="kilometraje" class="form-control" disabled value="Kilometraje">
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" id="estado" class="form-control btn btn-success" disabled value="Estado">
+                        </div>
+                        <div class="col-sm-2">
+                            <input type="text" id="encargado" class="form-control btn btn-primary" disabled value="Encargado">
+                        </div>
+                    </div>
+                    <hr class="custom-hr">
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <label for="descripcionCliente" class="form-label">Descripción Cliente</label>
+                            <textarea id="descripcionCliente" class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <label for="descripcionFallo" class="form-label">Descripción Fallo Técnico</label>
+                            <textarea id="descripcionFallo" class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-2">
+                            <label for="estado" class="form-label">Costo</label>
+                            <input type="text" id="estado" class="form-control btn btn-success" disabled value="$ 50.000">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="tab-pane fade" id="seguimientoContent">
+                    <h2>Seguimiento</h2>
+
+                    <label for="comentarios">Comentarios:</label>
+                    <textarea id="comentarios" class="form-control mb-2"></textarea>
+
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" class="form-control mb-2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mt-4 text-right" >
+                        
+        <button type="button" (click)="redirectToAlert()" class="btn btn-danger mr-2">Regresar</button>
+        <a href="home/alert-tracking" class="btn btn-danger mx-auto">Siguiente</a>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

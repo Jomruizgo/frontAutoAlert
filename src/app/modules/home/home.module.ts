@@ -14,6 +14,9 @@ import { CreateEvidenceComponent } from './pages/evidence/create-evidence/create
 import { DetailEvidenceComponent } from './pages/evidence/detail-evidence/detail-evidence.component';
 import { PartsComponent } from './pages/parts/parts.component';
 import { RegisterNewPartComponent } from './pages/parts/register-new-part/register-new-part.component';
+import { AlertOverviewComponent } from './pages/alert/alert-overview/alert-overview.component';
+import { CreateValidatedAlertComponent } from './pages/alert/create-validated-alert/create-validated-alert.component';
+import { AlertTrackingComponent } from './pages/alert/alert-tracking/alert-tracking.component';
 
 
 @NgModule({
@@ -28,7 +31,10 @@ import { RegisterNewPartComponent } from './pages/parts/register-new-part/regist
         CreateEvidenceComponent,
         DetailEvidenceComponent,
         PartsComponent,
-        RegisterNewPartComponent
+        RegisterNewPartComponent,
+        AlertOverviewComponent,
+        CreateValidatedAlertComponent,
+        AlertTrackingComponent
     ],
     imports: [
         CommonModule,

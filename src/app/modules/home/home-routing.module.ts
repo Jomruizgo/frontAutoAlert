@@ -8,6 +8,9 @@ import { ReferenceComponent } from './pages/reference/reference.component';
 import { CreateAlertComponent } from './pages/alert/create-alert/create-alert.component';
 import { CreateEvidenceComponent } from './pages/evidence/create-evidence/create-evidence.component';
 import { DetailEvidenceComponent } from './pages/evidence/detail-evidence/detail-evidence.component';
+import { AlertOverviewComponent } from './pages/alert/alert-overview/alert-overview.component';
+import { CreateValidatedAlertComponent } from './pages/alert/create-validated-alert/create-validated-alert.component';
+import { AlertTrackingComponent } from './pages/alert/alert-tracking/alert-tracking.component';
 import { PartsComponent } from './pages/parts/parts.component';
 
 
@@ -35,6 +38,18 @@ const routes: Routes = [
   {
     path: 'create-alert',
     component: CreateAlertComponent
+  },
+  {
+    path: 'create-validated-alert',
+    component: CreateValidatedAlertComponent
+  },
+  {
+    path: 'alert-overview',
+    component: AlertOverviewComponent
+  },
+  {
+    path: 'alert-tracking',
+    component: AlertTrackingComponent
   },
   {
     path: 'create-evidence',

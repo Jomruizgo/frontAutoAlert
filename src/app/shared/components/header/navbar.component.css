@@ -9,20 +9,20 @@
 
 }
 
-/* styles.css o tu archivo CSS específico */
+
 .bold-text {
-    font-weight: bold; /* Pone en negrita el texto */
+    font-weight: bold; 
   }
 
   .icon-text-container {
-    display: flex; /* Utiliza flexbox para alinear los elementos horizontalmente */
-    align-items: center; /* Centra verticalmente los elementos */
+    display: flex; 
+    align-items: center; 
   }
 
   mat-icon {
-    margin-right: 10px; /* Ajusta el espacio entre el ícono y el texto según lo necesites */
+    margin-right: 10px; 
   }
 
   .active {
-    background-color: black; /* Cambia color de fondo al item activo */
+    background-color: black; 
   }
