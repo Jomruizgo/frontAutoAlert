@@ -1,0 +1,15 @@
+.card-title {
+
+    color: #F44336;
+    font-weight: 400;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+}
+
+#archivo{
+    color: white;
+}
+
+#archivo:hover{
+    color: #F44336;
+}

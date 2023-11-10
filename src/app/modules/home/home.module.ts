@@ -9,6 +9,9 @@ import { ReferenceComponent } from './pages/reference/reference.component';
 import { SharedModule } from "../../shared/shared.module";
 import { CreateAlertComponent } from './pages/alert/create-alert/create-alert.component';
 import { RegisterPartComponent } from './pages/alert/register-part/register-part.component';
+import { EvidenceComponent } from './pages/evidence/evidence.component';
+import { CreateEvidenceComponent } from './pages/evidence/create-evidence/create-evidence.component';
+import { DetailEvidenceComponent } from './pages/evidence/detail-evidence/detail-evidence.component';
 
 
 @NgModule({
@@ -16,9 +19,12 @@ import { RegisterPartComponent } from './pages/alert/register-part/register-part
         HomeComponent,
         SupplierComponent,
         AlertComponent,
+        EvidenceComponent,
         ReferenceComponent,
         CreateAlertComponent,
-        RegisterPartComponent
+        RegisterPartComponent,
+        CreateEvidenceComponent,
+        DetailEvidenceComponent
     ],
     imports: [
         CommonModule,
