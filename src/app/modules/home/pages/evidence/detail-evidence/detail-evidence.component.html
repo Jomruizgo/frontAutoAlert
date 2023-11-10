@@ -1,13 +1,53 @@
 <app-navbar></app-navbar>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h3>Details of evidences is working!</h3>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <title>Detalles evidencias</title>
+  </head>
+  <body>
+    <div class="d-flex justify-content-center align-items-center mt-5">
+      <div class="card-body mt-5" style="max-width: 60rem; margin-left: 2rem">
+        <h2 class="card-title">Detalles Evidencia</h2>
+        <div class="container mt-5">
+          <table class="table mt-5">
+            <thead>
+              <tr>
+                <th class="th-text">ID</th>
+                <th class="th-text">ID Responsable</th>
+                <th class="th-text">Archivo</th>
+                <th class="th-text">Descripción</th>
+                <th class="th-text">Fecha de Creación</th>
+                <th class="th-text">Estado</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="th-text">1</td>
+                <td class="th-text">65</td>
+                <td class="th-text"><a href="#" id="archivo">Evidencia.png</a></td>
+                <td class="th-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia velit repudiandae expedita praesentium veniam ullam aliquam laudantium id dignissimos impedit dolor quia reprehenderit illum, est facilis non officiis, saepe adipisci?</td>
+                <td class="th-text">01/01/2023</td>
+                <td class="th-text">Activo</td>
+              </tr>
+              <!-- Fin de las filas de ejemplo -->
+            </tbody>
+          </table>
+          <div class="mt-4">
+            <a href="home/evidence" type="submit" class="btn btn-danger mx-auto">Regresar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
-
