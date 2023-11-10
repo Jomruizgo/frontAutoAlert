@@ -1,0 +1,90 @@
+<app-navbar></app-navbar>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Agregamos Font Awesome para los íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <!-- Pestañas -->
+        <div class="col-md-3 mt-4">
+            <ul class="nav nav-pills flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" id="infoTab" data-toggle="pill" href="home/alert-overview">Información General</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" id="seguimientoTab" data-toggle="pill" href="home/alert-tracking">Seguimiento</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Contenedor de contenido -->
+        <div class="col-md-9 mt-4">
+            <div class="tab-content">
+                <!-- Pestaña 1 - Información General -->
+                <div class="tab-pane fade show active" id="infoContent" style="border: 2px solid #ccc; padding: 15px; border-radius: 10px; overflow-y: auto;">
+                    <h3 class="form-label">Seguimiento de la alerta</h3>
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th class="th-text">Item de verificación</th>
+                                <th class="th-text">Estado</th>
+                                <th class="th-text">Responsable</th>
+                                <th class="th-text">Evidencias</th>
+                                <th class="th-text">Observaciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" class="form-control"></td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value="En Proceso">En Proceso</option>
+                                        <option value="Completado">Completado</option>
+                                        <option value="Pendiente">Pendiente</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <select class="form-control">
+                                        <option value="Juan Perez">Juan Perez</option>
+                                        <option value="Maria Rodriguez">Maria Rodriguez</option>
+                                        <option value="Carlos Lopez">Carlos Lopez</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-outline-secondary"><i class="fas fa-eye"></i></button>
+                                    <button type="button" class="btn btn-outline-danger"><i class="fas fa-plus"></i></button>
+                                </td>
+                                <td><input type="text" class="form-control"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="mt-4 text-right">
+                        <button type="button" onclick="redirectToAlert()" class="btn btn-danger mr-2"><i class="fas fa-plus"></i> Agregar ítem de verificación</button>
+                    </div>
+                </div>
+                <div class="mt-4 text-right">
+                    <a href="home/alert-overview" type="submit" class="btn btn-danger mx-auto">Regresar</a>
+                    <a>&nbsp;</a>
+                    <button type="submit" class="btn btn-danger mx-auto">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

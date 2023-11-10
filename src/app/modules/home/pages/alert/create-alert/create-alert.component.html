@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags-->
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,58 +41,15 @@
                         </div>
                     </div>
 
-                    <div class="mt-4" >
-                        <a href="#" class="btn btn-danger mx-auto">Siguiente</a>
-                        <a>&nbsp;</a>
+                    <div class="mt-4 text-right">
                         <a href="home/alert" type="submit" class="btn btn-danger mx-auto">Regresar</a>
+                        <a>&nbsp;</a>
+                        <a href="home/create-validated-alert" class="btn btn-danger mx-auto">Siguiente</a>
                     </div>
                 </form>
             </div>
         </div>
-
-            <div id="section2" name="section2" style="display: none;">
-                <form class="form mt-4" id="form2" method="">
-                    <div class="mb-3">
-                        <label for="fechaReclamacion" class="form-label">Fecha de reclamación</label>
-                        <div class="input-group">
-                            <input type="date" class="form-control" id="fechaReclamacion" name="fechaReclamacion">
-                            <span class="input-group-text">
-                                <i class="zmdi zmdi-calendar-note"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="kilometraje" class="form-label">Kilometraje del vehículo</label>
-                        <input type="text" class="form-control" id="kilometraje" name="kilometraje">
-                    </div>
-                    <div class="mb-3">
-                        <label for="costo" class="form-label">Costo</label>
-                        <input type="text" class="form-control" id="costo" name="costo">
-                    </div>
-                    <div class="mb-3">
-                        <label for="tipoAlerta" class="form-label">Tipo de Alerta</label>
-                        <select class="form-select" id="tipoAlerta" name="tipoAlerta">
-                            <option class="form-label" disabled selected>Elige una opción</option>
-                            <option>Subject 1</option>
-                            <option>Subject 2</option>
-                            <option>Subject 3</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="efectoCliente" class="form-label">Descripción Efecto Cliente</label>
-                        <textarea class="form-control" id="efectoCliente" name="efectoCliente" rows="10" cols="50"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <label for="modoFallo" class="form-label">Descripción del modo de fallo</label>
-                        <textarea class="form-control" id="modoFallo" name="modoFallo" rows="10" cols="50"></textarea>
-                    </div>
-
-                    <div class="mt-4">
-                        <button type="submit" class="btn btn-danger">Guardar</button> <!--REDIRECCIÓN A MODAL PIEZA-->
-                    </div>
-                </form>
-            </div>
-            </div>
+    </div>
 </body>
 
 </html>
