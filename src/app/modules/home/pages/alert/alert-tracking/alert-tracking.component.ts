@@ -13,5 +13,13 @@ export class AlertTrackingComponent {
   redirectToAlert() {
     this.router.navigate(['/home/alert-overview']);
   }
+
+  redirectToEvidence() {
+    this.router.navigate(['/home/evidence']);
+  }
+
+  redirectToCreateEvidence() {
+    this.router.navigate(['/home/create-evidence']);
+  }
   
 }

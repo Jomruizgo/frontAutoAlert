@@ -22,7 +22,6 @@
         </div>
         <div class="col-md-6 text-right">
             <button (click)="redirectToRegisterNewPart()" class="btn btn-danger mr-1"><i class="fas fa-plus"></i> Registrar nueva pieza</button>
-            <button (click)="redirectToRegisterPart()" class="btn btn-danger"><i class="fas fa-plus"></i> Registrar piezas asociadas</button>
         </div>
     </div>
     <table class="table mt-5 w-100">
@@ -31,7 +30,7 @@
                 <th class="th-text">Referencia</th>
                 <th class="th-text">Nombre</th>
                 <th class="th-text">Proveedor</th>
-
+                <th class="th-text">Acciones</th>
             </tr>
         </thead>
         <tbody>
@@ -40,7 +39,7 @@
                 <td class="th-text">15455</td>
                 <td class="th-text">Ejemplo Nombre</td>
                 <td class="th-text">Proveedor Ejemplo</td>
-                <td>
+                <td class="th-text">
                     <button class="btn btn-outline-secondary mr-2"><i class="fas fa-eye"></i></button>
                     <button class="btn btn-outline-secondary mr-2"><i class="fas fa-edit"></i></button>
                     <button class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></button>

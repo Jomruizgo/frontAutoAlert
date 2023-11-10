@@ -13,6 +13,10 @@ export class RegisterPartComponent {
   }
 
   backToMainPage() {
-    this.router.navigate(['/home/parts'])
+    this.router.navigate(['/home/alert'])
+  }
+
+  backToLast() {
+    this.router.navigate(['/home/create-validated-alert'])
   }
 }
