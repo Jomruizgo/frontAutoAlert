@@ -20,6 +20,10 @@ export class NavbarComponent implements OnInit {
         router:['/home','alert']
       },
       {
+        name:'Registro de piezas',
+        router:['/home','parts']
+      },
+      {
         name:'Evidencias',
         router:['/home','evidence']
       },

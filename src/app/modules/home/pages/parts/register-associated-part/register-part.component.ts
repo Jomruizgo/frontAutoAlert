@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-register-part',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class RegisterPartComponent {
 
+  constructor(private router: Router) {
+
+  }
+
+  backToMainPage() {
+    this.router.navigate(['/home/parts'])
+  }
 }

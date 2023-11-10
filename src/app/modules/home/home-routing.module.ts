@@ -8,9 +8,12 @@ import { ReferenceComponent } from './pages/reference/reference.component';
 import { CreateAlertComponent } from './pages/alert/create-alert/create-alert.component';
 import { CreateEvidenceComponent } from './pages/evidence/create-evidence/create-evidence.component';
 import { DetailEvidenceComponent } from './pages/evidence/detail-evidence/detail-evidence.component';
+import { PartsComponent } from './pages/parts/parts.component';
 
 
-import { RegisterPartComponent } from './pages/alert/register-part/register-part.component';
+import { RegisterPartComponent } from './pages/parts/register-associated-part/register-part.component';
+import { RegisterNewPartComponent } from './pages/parts/register-new-part/register-new-part.component';
+
 
 const routes: Routes = [
   {
@@ -48,6 +51,14 @@ const routes: Routes = [
   {
     path: 'register-part',
     component: RegisterPartComponent
+  },
+  {
+    path: 'parts',
+    component: PartsComponent
+  },
+  {
+    path: 'register-new-part',
+    component: RegisterNewPartComponent
   }
   
 

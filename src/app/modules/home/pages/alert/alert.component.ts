@@ -15,7 +15,4 @@ export class AlertComponent {
     this.router.navigate(['/home/create-alert']);
   }
 
-  redirectToRegisterPart() {
-    this.router.navigate(['/home/register-part'])
-  }
 }

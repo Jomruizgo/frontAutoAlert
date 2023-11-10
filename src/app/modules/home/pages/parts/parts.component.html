@@ -13,7 +13,7 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-md-6">
-            <div class="input-group w-50">
+            <div class="input-group w-100">
                 <input type="text" class="form-control" placeholder="Buscar">
                 <div class="input-group-append">
                     <span class="input-group-text"><i class="fas fa-search"></i></span>
@@ -21,32 +21,25 @@
             </div>
         </div>
         <div class="col-md-6 text-right">
-            <button (click)="redirectToCreateAlert()" class="btn btn-danger"><i class="fas fa-plus"></i> Agregar una nueva Alerta</button>
+            <button (click)="redirectToRegisterNewPart()" class="btn btn-danger mr-1"><i class="fas fa-plus"></i> Registrar nueva pieza</button>
+            <button (click)="redirectToRegisterPart()" class="btn btn-danger"><i class="fas fa-plus"></i> Registrar piezas asociadas</button>
         </div>
     </div>
-    <table class="table mt-5">
+    <table class="table mt-5 w-100">
         <thead>
             <tr>
-                <th class="th-text">ID</th>
+                <th class="th-text">Referencia</th>
                 <th class="th-text">Nombre</th>
-                <th class="th-text">Descripción</th>
-                <th class="th-text">Tipo</th>
-                <th class="th-text">Fecha de Creación</th>
-                <th class="th-text">Estado</th>
-                <th class="th-text">Encargado</th>
-                <th class="th-text">Acciones</th>
+                <th class="th-text">Proveedor</th>
+
             </tr>
         </thead>
         <tbody>
             
             <tr>
-                <td class="th-text">1</td>
-                <td class="th-text">Ejemplo</td>
-                <td class="th-text">Descripción de ejemplo</td>
-                <td class="th-text">Tipo de ejemplo</td>
-                <td class="th-text">01/01/2023</td>
-                <td class="th-text">Activo</td>
-                <td class="th-text">Encargado</td>
+                <td class="th-text">15455</td>
+                <td class="th-text">Ejemplo Nombre</td>
+                <td class="th-text">Proveedor Ejemplo</td>
                 <td>
                     <button class="btn btn-outline-secondary mr-2"><i class="fas fa-eye"></i></button>
                     <button class="btn btn-outline-secondary mr-2"><i class="fas fa-edit"></i></button>
@@ -63,3 +56,4 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
+

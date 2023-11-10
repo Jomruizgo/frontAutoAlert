@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="d-flex justify-content-center align-items-center mt-5">
+        <div class="card-body mt-5" style="max-width: 60rem; margin-left: 2rem;">
+            <h2 class="card-title">Registrar Nueva Pieza</h2>
+            <div id="section1">
+                <form class="form mt-4" id="form1" method="">
+                    <div class="mb-3">
+                        <label for="reference" class="form-label">Numero de referencia</label>
+                        <input type="text" class="form-control" id="reference" name="reference">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="supplier" class="form-label">Proveedor</label>
+                        <select class="form-select" id="supplier" name="supplier">
+                            <option class="form-label" disabled selected>Elige una opción</option>
+                            <option>Opcion 1</option>
+                            <option>Opcion 2</option>
+                            <option>Opcion 3</option>
+                        </select>
+                    </div>
+
+    
+                    <div class="mt-4" >
+
+                        <a href="home/parts" type="submit" class="btn btn-danger mx-auto">Regresar</a>
+                        <a>&nbsp;</a>
+                        <a href="#" class="btn btn-danger mx-auto">Siguiente</a>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
