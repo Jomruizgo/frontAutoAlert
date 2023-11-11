@@ -1,10 +1,10 @@
 <div class="ctn-login">
   <div class="ctn-login-form">
     <img src="assets/Logo_AutoAlert.png" alt="Logo-AutoAlert">
-
-    <input type="text" name="user">
-    <input type="password" name="password">
-    <input type="button" value="INICIAR SESIÓN">
+    <p>Para ingresar se puede usar user1 o user2 y cualquier contraseña.</p>
+    <input type="text" name="user" #user placeholder="Usuario" required>
+    <input type="password" name="password" #pass placeholder="Contraseña" required>
+    <input type="button" value="INICIAR SESIÓN" (click)="onLogin(user.value, pass.value)">
   </div>
 
 </div>

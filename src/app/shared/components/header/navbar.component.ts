@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from 'src/app/modules/auth/services/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
   mainMenu:{ defaultOptions: Array<any>, adminOptions:Array<any> } ={defaultOptions:[], adminOptions:[]};
+
+  constructor(private authService: AuthService, private router: Router) {}
 
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
@@ -44,5 +48,12 @@ export class NavbarComponent implements OnInit {
       }
     ]
 
+  }
+
+  onLogout(): void {
+    // Llama al método logout del servicio AuthService
+    this.authService.logout();
+    // Se redirige a la página de inicio de sesión o y se pueden realizar otras acciones después de cerrar sesión
+    this.router.navigate(['']);
   }
 }
