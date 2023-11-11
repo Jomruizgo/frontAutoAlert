@@ -7,7 +7,6 @@ import { SupplierComponent } from './pages/supplier/supplier.component';
 import { CreateSupplierComponent } from './pages/supplier/create-supplier/create-supplier.component';
 
 import { AlertComponent } from './pages/alert/alert.component';
-import { ReferenceComponent } from './pages/reference/reference.component';
 import { SharedModule } from "../../shared/shared.module";
 import { CreateAlertComponent } from './pages/alert/create-alert/create-alert.component';
 // <<<<<<< HEAD
@@ -33,7 +32,6 @@ import { AlertTrackingComponent } from './pages/alert/alert-tracking/alert-track
         CreateSupplierComponent,
         AlertComponent,
         EvidenceComponent,
-        ReferenceComponent,
         CreateAlertComponent,
         ContactComponent,
         CreateContactComponent,

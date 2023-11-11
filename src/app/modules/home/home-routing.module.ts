@@ -4,7 +4,6 @@ import { HomeComponent } from './pages/home/home.component';
 import { SupplierComponent } from './pages/supplier/supplier.component';
 import { AlertComponent } from './pages/alert/alert.component';
 import { EvidenceComponent } from './pages/evidence/evidence.component';
-import { ReferenceComponent } from './pages/reference/reference.component';
 import { CreateAlertComponent } from './pages/alert/create-alert/create-alert.component';
 import { CreateEvidenceComponent } from './pages/evidence/create-evidence/create-evidence.component';
 import { DetailEvidenceComponent } from './pages/evidence/detail-evidence/detail-evidence.component';
@@ -60,10 +59,6 @@ const routes: Routes = [
     component: DetailEvidenceComponent
   },
   {
-    path: 'reference',
-    component: ReferenceComponent
-  },
-  {
     path: 'register-part',
     component: RegisterPartComponent
   },
@@ -75,7 +70,7 @@ const routes: Routes = [
     path: 'register-new-part',
     component: RegisterNewPartComponent
   }
-  
+
 
 ];
 
