@@ -7,7 +7,7 @@ import { Observable, map } from 'rxjs';
 })
 export class AuthService {
 
-  private userDataUrl = 'assets/data/user.json';
+  private userDataUrl = 'assets/user.json';
 
   constructor(private http: HttpClient) {}
 
