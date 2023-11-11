@@ -7,9 +7,16 @@
 }
 
 #archivo{
-    color: white;
+    color: black;
 }
 
 #archivo:hover{
     color: #F44336;
+}
+
+.th-text{
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #4a4848;
 }

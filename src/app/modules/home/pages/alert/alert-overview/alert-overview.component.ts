@@ -11,7 +11,7 @@ export class AlertOverviewComponent {
   constructor(private router: Router) { }
 
   redirectToAlert() {
-    this.router.navigate(['/home/alert']);
+    this.router.navigate(['#/home/alert']);
   }
 
 }
