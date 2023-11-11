@@ -28,10 +28,6 @@ export class NavbarComponent implements OnInit {
         router:['/home','evidence']
       },
       {
-        name:'Referencias',
-        router:['/home','reference']
-      },
-      {
         name:'Proveedores',
         router:['/home','supplier']
       }

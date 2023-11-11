@@ -35,11 +35,8 @@ import { AlertTrackingComponent } from './pages/alert/alert-tracking/alert-track
         EvidenceComponent,
         ReferenceComponent,
         CreateAlertComponent,
-// <<<<<<< HEAD
         ContactComponent,
         CreateContactComponent,
-
-// =======
         RegisterPartComponent,
         CreateEvidenceComponent,
         DetailEvidenceComponent,
@@ -48,7 +45,7 @@ import { AlertTrackingComponent } from './pages/alert/alert-tracking/alert-track
         AlertOverviewComponent,
         CreateValidatedAlertComponent,
         AlertTrackingComponent
-// >>>>>>> 2cdcf33c27c6a9d645a0a4ccec973437f086e8f2
+
     ],
     imports: [
         CommonModule,

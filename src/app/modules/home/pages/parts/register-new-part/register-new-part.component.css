@@ -1,0 +1,18 @@
+
+.card-title {
+
+    color: #F44336;
+    font-weight: 400;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-label{
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-control{
+
+    width: 75%;
+}
