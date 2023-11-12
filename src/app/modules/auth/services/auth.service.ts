@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
+import { User } from 'src/app/interfaces/user.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +9,7 @@ import { Observable, map } from 'rxjs';
 export class AuthService {
 
   private userDataUrl = 'assets/user.json';
+  private loggedUser: User = {} as User;
 
   constructor(private http: HttpClient) {}
 
@@ -21,6 +23,8 @@ export class AuthService {
         );
 
         if (authenticatedUser) {
+          console.log(authenticatedUser);
+          this.loggedUser = authenticatedUser;
           // Simular respuesta exitosa con información del usuario
           return authenticatedUser;
         } else {
@@ -57,5 +61,9 @@ export class AuthService {
     // Verifica si el usuario está autenticado
     const token = localStorage.getItem('token');
     return !!token; // Devuelve true si hay un token, false si no lo hay
+  }
+
+  getLogedUser(): User {
+    return this.loggedUser;
   }
 }

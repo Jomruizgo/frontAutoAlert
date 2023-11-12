@@ -5,6 +5,7 @@ import { CreateSupplierComponent } from './modules/home/pages/supplier/create-su
 import { PageNotFoundComponent } from './shared/pages/page-not-found/page-not-found.component';
 import { CreateContactComponent } from './modules/home/pages/supplier/contact/create-contact/create-contact.component';
 import { AuthGuard } from './modules/auth/guards/auth.guard';
+import { AdminGuard } from './modules/auth/guards/admin.guard';
 
 
 
@@ -22,7 +23,7 @@ const routes: Routes = [
 {
   path: 'admin',
   loadChildren:()=> import('./modules/admin/admin.module').then(m=>m.AdminModule),
-  canActivate:[AuthGuard]
+  canActivate:[AuthGuard, AdminGuard],
 },
 {
   path: 'home/supplier/contact', component: ContactComponent, canActivate:[AuthGuard]

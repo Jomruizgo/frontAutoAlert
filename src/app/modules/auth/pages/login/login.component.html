@@ -1,7 +1,7 @@
 <div class="ctn-login">
   <form [formGroup]="formLogin" class="login-form" (ngSubmit)="onLogin()">
     <img src="assets/Logo_AutoAlert.png" alt="Logo-AutoAlert">
-    <p>Para ingresar se puede usar user1 o user2 y cualquier contraseña.</p>
+    <p>Para ingresar se puede usar user1 (admin) o user2 (no admin) y cualquier contraseña.</p>
     <input type="text" formControlName="userForm" #user placeholder="Usuario">
     <input type="password" formControlName="passwordForm" #pass placeholder="Contraseña" >
     <div class="errorSesion" *ngIf="errorSesion">Ocurrió un error con el usuario o la contraseña!</div>

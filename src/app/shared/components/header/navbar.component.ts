@@ -8,13 +8,15 @@ import { AuthService } from 'src/app/modules/auth/services/auth.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  mainMenu:{ defaultOptions: Array<any>, adminOptions:Array<any> } ={defaultOptions:[], adminOptions:[]};
+  mainMenu: Array<any> =[];
+  private defaultOptions: Array<any>=[];
+  private adminOptions:Array<any> =[];
 
   constructor(private authService: AuthService, private router: Router) {}
 
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    this.mainMenu.defaultOptions=[
+    this.defaultOptions=[
       {
         name:'Inicio',
         router:['/home']
@@ -37,12 +39,19 @@ export class NavbarComponent implements OnInit {
       }
     ]
 
-    this.mainMenu.adminOptions=[
+    this.adminOptions=[
       {
         name: 'Administración',
         router:['/admin']
       }
     ]
+
+      if(this.authService.getLogedUser().role == 'admin'){
+        this.mainMenu= [ ...this.defaultOptions, ...this.adminOptions];
+      }else{
+        this.mainMenu= this.defaultOptions;
+      }
+
 
   }
 

@@ -8,8 +8,8 @@
 
     <div class="spacer"></div>
 
-    <a mat-button [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="item.router"  *ngFor="let item of mainMenu.defaultOptions">{{item.name}}</a>
-    <a mat-button>Administración</a>
+    <a mat-button [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="item.router"  *ngFor="let item of mainMenu">{{item.name}}</a>
+
     <a class="super-button" color="warn" mat-raised-button (click)="onLogout()">Cerrar Sesión</a>
 
   </mat-toolbar>
