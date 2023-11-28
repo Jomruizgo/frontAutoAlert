@@ -1,0 +1,15 @@
+{"users": [
+    {
+      "user": "user1",
+      "email": "user1@correo.com",
+      "role": "admin",
+      "token": "kjhdfgdfkjkd.dfsdsdffsdg.ghsdgfhgfj"
+    },
+    {
+      "user": "user2",
+      "email": "user2@correo.com",
+      "role": "tqf",
+      "token": "kjhkjkd.dfsdfsdg.ghgfhgfj"
+    }
+  ]
+}

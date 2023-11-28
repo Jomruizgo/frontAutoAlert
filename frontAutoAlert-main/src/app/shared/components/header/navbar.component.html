@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" class="mat-elevation-z4 toolbar">
+
+    <div class="icon-text-container">
+        <mat-icon color="warn">directions_car</mat-icon>
+        <span class="bold-text">Auto</span>
+        <span>Alert</span>
+      </div>
+
+    <div class="spacer"></div>
+    <a mat-button [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" [routerLink]="item.router"  *ngFor="let item of mainMenu">{{item.name}}</a>
+
+    <a class="super-button" color="warn" mat-raised-button (click)="onLogout()">Cerrar Sesión</a>
+
+  </mat-toolbar>

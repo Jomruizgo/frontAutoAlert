@@ -1,0 +1,64 @@
+.ctn-login{
+  background-color: #F2F2F2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.login-form{
+  background: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 500px;
+  height: 80%;
+  max-height: 700px;
+  align-items: center;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-form img{
+  width: 30%;
+  margin-top: 20%;
+  margin-bottom: 30px;
+}
+
+
+.login-form input{
+  width: 80%;
+  height: 50px;
+  background: #F1F1F1;
+  border: none; /*esto esta evitando que funcione el input.ng-touched a menos que se use !important*/
+  border-radius: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 0 25px 0 25px;
+
+}
+
+#btn-login{
+  background: #D81d1D;
+  color: white;
+  width: 35%;
+  min-width: 140px;
+  margin-top: 20px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+input.ng-invalid.ng-touched {
+  border: 2px solid red !important; /*ver comentario en .login-form input*/
+}
+
+button:disabled{
+  opacity: 0.5;
+}
+
+.errorSesion{
+  color: red;
+  text-align: center;
+}

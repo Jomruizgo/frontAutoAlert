@@ -1,0 +1,28 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+    text-align: center;
+    padding: 5% 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #F44336;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+svg {
+    width: 150px;
+    height: 150px;
+    fill: #dc3545;
+    margin-bottom: 20px;
+}
